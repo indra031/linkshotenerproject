@@ -48,7 +48,7 @@ export default async function Home() {
     <div className="flex flex-col flex-1">
       {/* Hero */}
       <section className="flex flex-col flex-1 items-center justify-center gap-8 px-6 py-24 text-center">
-        <div className="inline-flex items-center gap-2 rounded-none border border-border bg-muted px-3 py-1 text-xs text-muted-foreground">
+        <div className="inline-flex items-center gap-2 border border-border bg-muted px-3 py-1 text-xs text-muted-foreground">
           <LinkSimple weight="bold" className="size-3.5" />
           Simple. Fast. Reliable.
         </div>
