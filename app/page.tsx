@@ -1,13 +1,11 @@
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
-import { SignInButton, SignUpButton } from "@clerk/nextjs";
-import { Button } from "@/components/ui/button";
+import { HeroButtons } from "@/components/hero-buttons";
 import {
   LinkSimple,
   ChartBar,
   Folders,
   ShieldCheck,
-  ArrowRight,
 } from "@phosphor-icons/react/dist/ssr";
 
 const features = [
@@ -61,19 +59,7 @@ export default async function Home() {
           Create short, memorable links in seconds and get real-time analytics
           on every click — all from one clean dashboard.
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-3">
-          <SignUpButton mode="modal">
-            <Button size="lg" className="gap-2">
-              Get started free
-              <ArrowRight weight="bold" className="size-4" />
-            </Button>
-          </SignUpButton>
-          <SignInButton mode="modal">
-            <Button size="lg" variant="outline">
-              Sign in
-            </Button>
-          </SignInButton>
-        </div>
+        <HeroButtons />
       </section>
 
       {/* Features */}
@@ -109,12 +95,7 @@ export default async function Home() {
             Join today and start shortening links for free. No credit card
             required.
           </p>
-          <SignUpButton mode="modal">
-            <Button size="lg" className="gap-2">
-              Create your account
-              <ArrowRight weight="bold" className="size-4" />
-            </Button>
-          </SignUpButton>
+          <HeroButtons variant="cta" />
         </div>
       </section>
     </div>
