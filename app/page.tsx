@@ -95,7 +95,6 @@ export default async function Home() {
             Join today and start shortening links for free. No credit card
             required.
           </p>
-          <HeroButtons variant="cta" />
         </div>
       </section>
     </div>
